@@ -17,7 +17,7 @@ var commentRoutes    = require("./routes/comments"),
     indexRoutes      = require("./routes/index")
 
 const MongoClient = require('mongodb').MongoClient;
-const uri = "mongodb+srv://devsprout:abcabc619@cluster0.coeep.mongodb.net/<MongoDB>?retryWrites=true&w=majority";
+const uri = "mongodb+srv://devsprout:<abcabc619>@cluster0.coeep.mongodb.net/<mongodb>?retryWrites=true&w=majority";
 const client = new MongoClient(uri, { useNewUrlParser: true });
 client.connect(err => {
   const collection = client.db("test").collection("devices");
